@@ -1,0 +1,4 @@
+MyPartitioner.class
+MyPartitionerMapper.class
+MyPartitionerReducer.class
+JobMain.class
