@@ -6,9 +6,9 @@ public class MyPartitioner extends Partitioner<Text, NullWritable> {
 
     @Override
     public int getPartition(Text text, NullWritable nullWritable, int i) {
-        String Key = text.toString().split("\t")[5];
-        int i1 = Integer.parseInt(Key);
-        if (i1 >= 15){
+        String[] split = text.toString().split("\t");
+        int i1 = Integer.parseInt(split[5]);
+        if (i1 < 15){
             return 0;
         }else {
             return 1;

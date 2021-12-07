@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class MyPartitionerReducer extends Reducer<Text, NullWritable, Text, NullWritable> {
     @Override
-    protected void reduce(Text key, Iterable<NullWritable> values, Reducer<Text, NullWritable, Text, NullWritable>.Context context) throws IOException, InterruptedException {
+    protected void reduce(Text key, Iterable<NullWritable> values, Context context) throws IOException, InterruptedException {
         context.write(key, NullWritable.get());
     }
 }

@@ -7,7 +7,7 @@ import java.io.IOException;
 
 public class MyPartitionerMapper extends Mapper<LongWritable, Text, Text, NullWritable> {
     @Override
-    protected void map(LongWritable key, Text value, Mapper<LongWritable, Text, Text, NullWritable>.Context context) throws IOException, InterruptedException {
+    protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
         context.write(value, NullWritable.get());
     }
 }
