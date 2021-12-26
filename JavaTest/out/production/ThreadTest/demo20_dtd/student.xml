@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- 第一种引入dtd方式-引入did文件 -->
+<!DOCTYPE students SYSTEM 'D:\JavaCode\BigData\JavaTest\ThreadTest\src\demo20_dtd\personDTD.dtd'>
+
+<!-- 第二种引入dtd方式-文件内引入 -->
+<!DOCTYPE students SYSTEM [
+        <!ELEMENT students (student)>
+        <!ELEMENT student (name,age)>
+        <!ELEMENT name (#PCDATA)>
+        <!ELEMENT age (#PCDATA)>
+        ]>
+
+<!-- 第三种引入dtd方式-网络引入 -->
+<!DOCTYPE students PUBLIC "dtd文件名称" "dtd文件的URL">
+
+<students>
+    <student id="1">
+        <name>张三</name>
+        <age>24</age>
+    </student>
+    <student id="2">
+        <name>李四</name>
+        <age>25</age>
+    </student>
+</students>
