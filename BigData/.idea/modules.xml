@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/day01_hdfs/day01_hdfs.iml" filepath="$PROJECT_DIR$/day01_hdfs/day01_hdfs.iml" />
       <module fileurl="file://$PROJECT_DIR$/day02_MapReduce/day02_MapReduce.iml" filepath="$PROJECT_DIR$/day02_MapReduce/day02_MapReduce.iml" />
       <module fileurl="file://$PROJECT_DIR$/day03_MapReduce02/day03_MapReduce02.iml" filepath="$PROJECT_DIR$/day03_MapReduce02/day03_MapReduce02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day03_MapReduceWork/day03_MapReduceWork.iml" filepath="$PROJECT_DIR$/day03_MapReduceWork/day03_MapReduceWork.iml" />
     </modules>
   </component>
 </project>

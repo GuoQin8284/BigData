@@ -8,12 +8,14 @@
         <outputRelativeToContentRoot value="true" />
         <module name="day02_MapReduce" />
         <module name="day03_MapReduce02" />
+        <module name="day03_MapReduceWork" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="day01_hdfs" target="1.5" />
       <module name="day02_MapReduce" target="1.5" />
       <module name="day03_MapReduce02" target="1.5" />
+      <module name="day03_MapReduceWork" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
