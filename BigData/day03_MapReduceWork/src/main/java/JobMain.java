@@ -2,18 +2,18 @@ import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.NullWritable;
 
+import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.lib.input.TextInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
 
-import javax.xml.soap.Text;
 import java.io.File;
 import java.io.IOException;
 
 public class JobMain {
     public static void main(String[] args) throws IOException, InterruptedException, ClassNotFoundException {
         Configuration configuration = new Configuration();
-        Job job = Job.getInstance(configuration);
+        Job job = Job.getInstance(configuration, "Convid19Partition");
         job.setJarByClass(JobMain.class);
 
         job.setMapperClass(Covid19Mapper.class);
@@ -40,7 +40,7 @@ public class JobMain {
         TextOutputFormat.setOutputPath(job, outputPath);
 
         job.setPartitionerClass(Covid19Partition.class);
-        job.setNumReduceTasks(55);
+        job.setNumReduceTasks(56d);
 
         boolean b = job.waitForCompletion(true);
         System.exit(b?0:1);

@@ -6,16 +6,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="day02_MapReduce" />
-        <module name="day03_MapReduce02" />
+        <module name="day04_SortMapReduce" />
         <module name="day03_MapReduceWork" />
+        <module name="day02_MapReduce" />
+        <module name="test" />
+        <module name="day03_MapReduce02" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="day01_hdfs" target="1.5" />
       <module name="day02_MapReduce" target="1.5" />
       <module name="day03_MapReduce02" target="1.5" />
-      <module name="day03_MapReduceWork" target="1.5" />
+      <module name="day03_MapReduceWork" target="7" />
+      <module name="day04_SortMapReduce" target="7" />
+      <module name="test" target="7" />
     </bytecodeTargetLevel>
   </component>
 </project>
